@@ -1,0 +1,196 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #1a1d1a;
+    background-color: #cad2c5;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }  
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+  
+header nav a:hover {
+  color: #fff;
+  transition: 0.5s ease-out;
+  letter-spacing: 2.5px;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* Front Page Styles */
+.front-page {
+    height: 100vh; 
+    background-color: #344550; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-page-content {
+    text-align: center;
+    color: #fff; 
+    font-family: 'Didot';
+    letter-spacing: 2px;
+}
+.front-page h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    position: relative; 
+    z-index: 1000; 
+}
+
+.scroll-target {
+    scroll-margin-top: 90px; 
+}
+
+.navbar {
+    font-family:'Didot';
+    letter-spacing: 2px;
+}
+
+.navbar-custom {
+    background-color: #102b3f;
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 40px;
+}
+
+/* About Section Styles */
+#about {
+    background-color: #cad2c5;
+    color: #102b3f;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    background-color: #344550;
+    color:#bcaf9c;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px #03120e;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #cad2c5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slightly pop up on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.card-title {
+    font-size: 24px;
+    color:#102b3f;
+}
+
+.card-text {
+    font-size: 16px;
+    color:#102b3f;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #cad2c5;
+    color:#102b3f;
+    font-family: 'Didot';
+}
+
+.contact-text {
+    font-size: 20px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #102b3f; 
+    color: #fff; 
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #bcaf9c; 
+    color: #102b3f;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color:#102b3f;
+    color:#bcaf9c;
+    font-family: 'Didot';
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.fa-solid {
+    padding: 15px 15px 15px 0px;
+}
+
+a {
+    color: #102b3f; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+

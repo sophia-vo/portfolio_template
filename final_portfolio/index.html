@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Vo - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1c7130d388.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Front Page section -->
+    <section id="front-page" class="front-page">
+        <div class="front-page-content">
+            <h1 id="typing-title"></h1>
+        </div>
+    </section>
+    
+    <!-- Header section -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#">SOPHIA VO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about" onclick="scrollToSection('about')">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" onclick="scrollToSection('portfolio')">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="scrollToSection('contact')">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="tag section scroll-target">
+        <div class="container">
+            <h2>ABOUT ME</h2>
+            <p>
+                I am a passionate and dedicated software developer with a love for creating innovative solutions.
+                Currently studying data science at UCSD, I've already started exploring algorithms, data structures, and software engineering, bridging theory with practical problem-solving. 
+                Throughout my academic journey, I've had the opportunity to work on a variety of exciting projects, from building web applications to developing mobile apps. These experiences have not only sharpened my coding abilities but have also taught me the importance of collaboration, creativity, and attention to detail.
+                Thank you for visiting my portfolio, and I look forward to the opportunity to collaborate and create something amazing together.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project section -->
+    <section id="portfolio" class="tag scroll-target">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <!-- Project 1 -->
+                <div class="reveal fade-left card">
+                    <div class="card-body">
+                        <h3 class="card-title">Tast Tracker Web Application</h3>
+                        <p class="card-text">I created a web-based task tracker application utilizing HTML, CSS, and JavaScript, featuring functionalities for adding, editing, and deleting tasks, all aimed at improving personal productivity. The technologies employed for this project included HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="reveal fade-left card">
+                    <div class="card-body">
+                        <h3 class="card-title">Personal Blog Website</h3>
+                        <p class="card-text">Designed and constructed a personal blog website from the ground up, showcasing a user-friendly interface for composing and publishing articles. The site includes a comment system to encourage reader engagement. Technologies employed encompassed HTML, CSS, JavaScript, and PHP.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="reveal fade-left card">
+                    <div class="card-body">
+                        <h3 class="card-title">To-Do List Mobile App</h3>
+                        <p class="card-text">Developed a to-do list mobile app using React Native, focusing on the creation of a functional task management application. This project allowed me to gain hands-on experience in mobile app development while utilizing JavaScript and React Native.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="reveal fade-left card">
+                    <div class="card-body">
+                        <h3 class="card-title">E-commerce Website</h3>
+                        <p class="card-text">Crafted a basic e-commerce website complete with product listings, a shopping cart, and a checkout system. Payment processing was integrated using PHP (or any other backend language) and a Payment Gateway API, delivering a seamless shopping experience to users. Technologies employed included HTML, CSS, JavaScript, PHP, and the Payment Gateway API.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="reveal fade-left card">
+                    <div class="card-body">
+                        <h3 class="card-title">Weather App</h3>
+                        <p class="card-text">Designed and developed a weather app that retrieves real-time weather information based on user input, harnessing HTML, CSS, JavaScript, and API integration. This project enhanced user experience by providing accurate weather forecasts and visual representations, showcasing my skills in front-end web development and API integration.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="tag section">
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <p class="contact-text"><i class="fa-solid fa-envelope" style="color: #1e3050;"></i><a href="mailto:sovo@ucsd.edu">sovo@ucsd.edu</a>
+                <br><i class="fa-solid fa-phone" style="color: #1e3050;"></i><a href="tel:+4086778638">(408) 677-8638</a></p>
+            <a href="https://docs.google.com/document/d/1RDzNCkOE5jzpdm-eXwjYxEVko13LtTc7CfsDnKBXVl8/edit?usp=sharing" target="_blank" class="button">Resume</a>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2023 Sophia Vo</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
